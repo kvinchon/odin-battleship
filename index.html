@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship game</title>
+  <script defer src="runtime.bundle.js"></script><script defer src="main.bundle.js"></script></head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="left">
+          <span>⚔️</span>
+          <div class="separator"></div>
+          <h1>Battleship</h1>
+        </div>
+        <div class="right">
+          Crafted with 🖤 by
+          <a href="https://github.com/kvinchon" target="_blank">kvinchon</a>
+        </div>
+      </header>
+      <div class="game">
+        <div class="human">
+          <div class="title">Your fleet</div>
+          <div id="humanBoard" class="board"></div>
+        </div>
+        <div class="opponent">
+          <div class="title">Opponent</div>
+          <div id="opponentBoard" class="board"></div>
+        </div>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="winner"></p>
+          <button id="play">New game</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
